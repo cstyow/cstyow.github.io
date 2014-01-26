@@ -1,0 +1,5 @@
+name: Yow
+markdown: redcarpet
+pygments: true
+exclude: ['node_modules', 'Gruntfile.js', 'package.json', 'bower.json', 'README.md', 'dev']
+permalink: date

@@ -1,0 +1,35 @@
+---
+layout: default
+title: Yow
+---
+<section class="posts section">
+    {% for post in site.categories.posts limit:2 %}
+		<article class="post">
+			<span class="post__date">{{ post.date | date: "%b" }} <span class="post__date--large">{{ post.date | date: "%d" }}</span> {{ post.date | date: "%Y" }}</span>
+			<a class="post__title" href="{{ post.url }}">{{ post.title }}</a>
+			{{post.excerpt}}
+			<a class="post__link" href="{{ post.url }}">Full Post &rarr;</a>
+		</article>
+    {% endfor %}
+</section>
+
+<section class="works section">
+	<h2 class="section__title">Recent Work</h2>
+	<div class="grid">
+		{% for post in site.categories.work limit:2 %}
+		<div class="grid__cell grid__cell--work">
+			<div class="work work--center">
+				<a href="{{post.link}}"><img class="work__img" src="{{ post.image }}" alt="{{ post.title }}" /></a>
+				<a class="work__title" href="{{post.link}}">{{ post.title }}</a>
+				<span class="work__built">{{ post.built }}</span>
+			</div>
+		</div>
+		{% endfor %}
+		<a class="work-more" href="/work">View All &rarr;</a>
+	</div>
+</section>
+
+<section class="section" id="about">
+	<h2 class="section__title">About</h2>
+	<p class="about__text">Hi, I'm Chris Yow, a web developer living in Raleigh, NC. I currently work at <a href="http://capstrat.com">Capstrat</a> and in the past made web apps at <a href="http://fragmentlabsc.com">Fragment</a>. I usually brand myself as a front end developer, but I am comfortable in any role and am always excited to take on new challenges. I love meeting new people and learning new things; feel free to get in touch.</p>
+</section>

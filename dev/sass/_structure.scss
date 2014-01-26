@@ -1,0 +1,16 @@
+// Structure
+// =============================================================================
+
+@include breakpoint(9) {
+	@include header-medium;
+	@include nav-medium;
+	@include posts-medium;
+	@include work-medium;
+	@include footer-medium;
+}
+
+@include breakpoint(11) {
+	@include posts-large;
+	@include work-large;
+	@include footer-large;
+}

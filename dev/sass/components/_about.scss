@@ -1,0 +1,11 @@
+.about__text {
+	line-height: em(22px);
+	font-size: em(16px);
+	@include roboto;
+}
+.about__img {
+	margin-bottom: em(10px);
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid__cell--pic { text-align: center; }

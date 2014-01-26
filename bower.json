@@ -1,0 +1,9 @@
+{
+    "name": "yow",
+    "version": "0.0.0",
+    "dependencies": {
+        "modernizr": "2.6.2",
+        "breakpoint": "4.6.2",
+        "bourbon": "3.1.8",
+    }
+}

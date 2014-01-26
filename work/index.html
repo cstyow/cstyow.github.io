@@ -1,0 +1,18 @@
+---
+layout: default
+title: Work
+---
+
+<section class="works section">
+	<div class="grid">
+		{% for post in site.categories.work %}
+		<div class="grid__cell grid__cell--work">
+			<div class="work work--center">
+				<a href="{{ post.link }}"><img class="work__img" src="{{ post.image }}" alt="{{ post.title }}" /></a>
+				<a class="work__title" href="{{ post.link }}">{{ post.title }}</a>
+				<span class="work__built">{{ post.built }}</span>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>

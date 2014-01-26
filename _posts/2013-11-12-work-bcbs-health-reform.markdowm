@@ -1,0 +1,9 @@
+---
+layout: work
+title:  BCBSNC | Healthcare Reform
+date: 2013-11-12 09:48:27
+categories: work
+image: '/static/img/hrbcbs.png'
+link: http://healthreform.bcbsnc.com/
+built: Django, Front-End
+---

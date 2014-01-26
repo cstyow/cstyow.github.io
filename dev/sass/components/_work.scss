@@ -1,0 +1,52 @@
+.work__title {
+	display: block;
+	margin-bottom: em(4px);
+	font-size: em(20px);
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: em(20px);
+	letter-spacing: em(.5px);
+	@include cabin;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.work__img {
+	margin-bottom: em(10px);
+}
+.work {
+	margin-bottom: em(15px);
+	background-color: $white;
+	position: relative;
+	overflow: hidden;
+}
+.work--center {
+	text-align: center;
+}
+.work__text {
+	margin-bottom: em(25px);
+	line-height: em(24px);
+	font-size: em(16px);
+	@include roboto;
+}
+.work__built {
+	display: block;
+	font-size: em(12px);
+	padding-bottom: em(5px);
+	@include roboto;
+}
+.work-more {
+	float: right;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@mixin work-medium {
+	.grid__cell--work { width: fluid(4.5, 9); }
+}
+
+@mixin work-large {
+	.grid__cell--work { width: fluid(5.5, 11); }
+}

@@ -1,0 +1,23 @@
+/*------------------------------------------------------------------
+[Color Vars]*/
+
+$white: #FFF;
+$black: #000;
+$red: #c32929;
+$fade: #dfdfdf;
+
+/*------------------------------------------------------------------
+[Global Styles]*/
+::selection { background: $red; color: $white; }
+html { border-top: em(2px) solid $black; }
+body {
+	border-top: em(5px) solid $fade;
+	background: $fade;
+}
+a {
+	color: $black;
+	@include roboto-bold;
+}
+.site-wrap {
+	background: $white;
+}

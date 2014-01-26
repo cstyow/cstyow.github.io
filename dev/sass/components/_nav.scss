@@ -1,0 +1,21 @@
+.nav {
+	@include roboto;
+}
+.nav__item {
+	display: inline-block;
+	margin: 0 em(10px);
+	font-size: em(14px);
+	text-transform: uppercase;
+	text-decoration: none;
+	@include cabin;
+}
+.nav__item--active {
+	border-bottom: em(2px) solid black;
+	padding-bottom: em(3px);
+}
+
+@mixin nav-medium {
+	.nav__item {
+		font-size: em(18px);
+	}
+}

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<div class="post">
+	<span class="post__date">{{ page.date | date: "%b" }} <span class="post__date--large">{{ page.date | date: "%d" }}</span> {{ page.date | date: "%Y" }}</span>
+	<h2 class="post__title">{{ page.title }}</h2>
+	{{ content }}
+</div>

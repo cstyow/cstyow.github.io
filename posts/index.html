@@ -1,0 +1,14 @@
+---
+layout: default
+title: Posts
+---
+<section class="posts section">
+    {% for post in site.categories.posts %}
+		<article class="post">
+			<span class="post__date">{{ post.date | date: "%b" }} <span class="post__date--large">{{ post.date | date: "%d" }}</span> {{ post.date | date: "%Y" }}</span>
+			<a class="post__title" href="{{ post.url }}">{{ post.title }}</a>
+			{{post.excerpt}}
+			<a class="post__link" href="{{ post.url }}">More &rarr;</a>
+		</article>
+    {% endfor %}
+</section>
