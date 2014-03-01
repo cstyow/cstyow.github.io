@@ -143,10 +143,10 @@ img {
 }
 
 @font-face {
-  font-family: 'Cabin';
+  font-family: 'lato';
   font-style: normal;
   font-weight: 600;
-  src: local("Cabin SemiBold"), local("Cabin-SemiBold"), url(http://themes.googleusercontent.com/static/fonts/cabin/v4/bSicyj3YibVhVPhGZyWVI3YhjbSpvc47ee6xR_80Hnw.woff) format("woff");
+  src: local("lato SemiBold"), local("lato-SemiBold"), url(http://themes.googleusercontent.com/static/fonts/lato/v4/bSicyj3YibVhVPhGZyWVI3YhjbSpvc47ee6xR_80Hnw.woff) format("woff");
 }
 
 @font-face {
@@ -242,7 +242,7 @@ a {
   font-size: 0.875em;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Cabin", sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 .nav__item--active {
@@ -263,7 +263,7 @@ a {
   text-transform: uppercase;
   border-bottom: 0.0625em solid #dfdfdf;
   padding-bottom: 0.3125em;
-  font-family: "Cabin", sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 .post {
@@ -286,7 +286,7 @@ a {
   text-decoration: none;
   line-height: 1.25em;
   letter-spacing: 0.03125em;
-  font-family: "Cabin", sans-serif;
+  font-family: "lato", sans-serif;
 }
 .post__title:hover {
   text-decoration: underline;
@@ -328,7 +328,7 @@ a {
   text-decoration: none;
   line-height: 1.25em;
   letter-spacing: 0.03125em;
-  font-family: "Cabin", sans-serif;
+  font-family: "lato", sans-serif;
 }
 .work__title:hover {
   text-decoration: underline;

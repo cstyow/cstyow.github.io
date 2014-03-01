@@ -29,6 +29,7 @@
 	float: right;
 	font-size: em(12px);
 	text-align: right;
+	@include roboto;
 }
 
 @mixin footer-medium {

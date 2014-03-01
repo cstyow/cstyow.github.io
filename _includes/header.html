@@ -7,7 +7,7 @@
     <title>{% if page.title != 'Yow' %}{{ page.title }} | Yow{% else %}Yow{% endif %}</title>
     <meta name="viewport" content="width=device-width">
 
-    <meta name="description" content="">
+    <meta name="description" content="Just a dude making awesome stuff on the web living in NC. I try to blog about what I learn as much as possible.">
     <link rel="shortcut icon" href="/static/img/favicon.png">
 
     <link rel="stylesheet" href="/static/css/style.css">
@@ -19,13 +19,19 @@
     <div class="head-wrap">
         <div class="wrapper">
             <header class="header">
-                <h1 class="header__title"><a href="/">Christopher Yow</a></h1>
-                <h3 class="header__sub-title">Web Developer</h3>
-                <nav class="nav">
-                    <a class="nav__item{% if page.url == "/posts/index.html" %} nav__item--active{% endif %}" href="/posts">Posts</a>
-                    <a class="nav__item{% if page.url == "/work/index.html" %} nav__item--active{% endif %}" href="/work">Work</a>
-                    <a class="nav__item" href="/#about">About</a>
-                </nav>
+                <div class="grid">
+                    <div class="grid__cell grid__cell--head-left">
+                        <h1 class="header__title"><a href="/">Christopher Yow</a></h1>
+                        <h3 class="header__sub-title">Web Developer</h3>
+                    </div>
+                    <div class="grid__cell grid__cell--head-right">
+                        <nav class="nav">
+                            <a class="nav__item{% if page.url == "/posts/index.html" %} nav__item--active{% endif %}" href="/posts">Posts</a>
+                            <a class="nav__item{% if page.url == "/work/index.html" %} nav__item--active{% endif %}" href="/work">Work</a>
+                            <a class="nav__item" href="/#about">About</a>
+                        </nav>
+                    </div>
+                </div>
             </header>
         </div>
     </div>

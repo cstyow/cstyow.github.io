@@ -1,7 +1,7 @@
 .head-wrap {
-	margin-bottom: em(15px);
 	background-color: $white;
 	padding-bottom: em(15px);
+	padding-top: em(15px);
 }
 .header {
 	text-align: center;
@@ -9,23 +9,40 @@
 .header__title {
 	text-transform: uppercase;
 	font-weight: normal;
-	padding: em(12px) 0 em(3px) 0;
 	font-size: em(24px);
-	@include cabin;
-	a { text-decoration: none; }
+	margin-bottom: em(2px);
+	text-align: center;
+	a {
+		text-decoration: none;
+		@include lato;
+	}
 }
 .header__sub-title {
 	text-transform: uppercase;
 	padding-bottom: em(20px);
 	font-size: em(12px);
+	text-align: center;
 	@include roboto;
 }
 
 @mixin header-medium {
-	.head-wrap { margin-bottom: em(30px); }
-	.header__title { font-size: em(35px); }
+	.head-wrap {
+		margin-bottom: em(15px);
+		padding-top: em(30px);
+	}
+	.header__title {
+		font-size: em(28px);
+		text-align: left;
+	}
 	.header__sub-title {
 		font-size: em(15px);
-		padding-bottom: em(30px);
+		text-align: left;
 	}
+	.grid__cell--head-left { width: fluid(5, 9); }
+	.grid__cell--head-right { width: fluid(4, 9); }
+}
+
+@mixin header-large {
+	.grid__cell--head-left { width: fluid(4, 11); }
+	.grid__cell--head-right { width: fluid(7, 11); }
 }

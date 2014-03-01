@@ -1,13 +1,14 @@
 .nav {
+	text-align: center;
 	@include roboto;
 }
 .nav__item {
 	display: inline-block;
-	margin: 0 em(10px);
+	margin: em(5px) em(12px);
 	font-size: em(14px);
 	text-transform: uppercase;
 	text-decoration: none;
-	@include cabin;
+	@include lato;
 }
 .nav__item--active {
 	border-bottom: em(2px) solid black;
@@ -15,7 +16,9 @@
 }
 
 @mixin nav-medium {
+	.nav { text-align: right; }
 	.nav__item {
-		font-size: em(18px);
+		margin: em(12px);
+		font-size: em(16px);
 	}
 }

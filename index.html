@@ -3,12 +3,13 @@ layout: default
 title: Yow
 ---
 <section class="posts section">
+	<h2 class="section__title">Recent Posts</h2>
     {% for post in site.categories.posts limit:2 %}
 		<article class="post">
 			<span class="post__date">{{ post.date | date: "%b" }} <span class="post__date--large">{{ post.date | date: "%d" }}</span> {{ post.date | date: "%Y" }}</span>
 			<a class="post__title" href="{{ post.url }}">{{ post.title }}</a>
 			{{post.excerpt}}
-			<a class="post__link" href="{{ post.url }}">Full Post &rarr;</a>
+			<a class="post__link" href="{{ post.url }}">Full Post<span class="right-chevron">r</span></a>
 		</article>
     {% endfor %}
 </section>
@@ -25,7 +26,7 @@ title: Yow
 			</div>
 		</div>
 		{% endfor %}
-		<a class="work-more" href="/work">View All &rarr;</a>
+		<a class="work-more" href="/work">View All<span class="right-chevron">r</span></a>
 	</div>
 </section>
 

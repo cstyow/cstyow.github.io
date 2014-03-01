@@ -1,7 +1,7 @@
 .post {
-	margin-bottom: em(25px);
+	margin-bottom: em(20px);
 	line-height: em(24px);
-	font-size: em(16px);
+	font-size: em(15px);
 	position: relative;
 	@include roboto;
 	&:last-child { margin-bottom: 0; }
@@ -14,19 +14,11 @@
 	text-decoration: none;
 	line-height: em(20px);
 	letter-spacing: em(.5px);
-	@include cabin;
-	&:hover {
-		text-decoration: underline;
-	}
+	font-weight: bold;
+	@include lato;
 }
 .post__date {
 	display: block;
-}
-.post__link {
-	text-decoration: none;
-	&:hover {
-		text-decoration: underline;
-	}
 }
 code {
 	background-color: lighten($fade, 10%);
@@ -39,9 +31,6 @@ code {
 @mixin posts-medium {
 	.post {
 		padding-left: em(80px);
-	}
-	.post__title {
-		font-size: em(22px);
 	}
 	.post__date {
 		position: absolute;

@@ -6,7 +6,7 @@
 	text-decoration: none;
 	line-height: em(20px);
 	letter-spacing: em(.5px);
-	@include cabin;
+	@include lato;
 	&:hover {
 		text-decoration: underline;
 	}
@@ -15,7 +15,7 @@
 	margin-bottom: em(10px);
 }
 .work {
-	margin-bottom: em(15px);
+	margin-bottom: em(20px);
 	background-color: $white;
 	position: relative;
 	overflow: hidden;

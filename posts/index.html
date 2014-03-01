@@ -8,7 +8,7 @@ title: Posts
 			<span class="post__date">{{ post.date | date: "%b" }} <span class="post__date--large">{{ post.date | date: "%d" }}</span> {{ post.date | date: "%Y" }}</span>
 			<a class="post__title" href="{{ post.url }}">{{ post.title }}</a>
 			{{post.excerpt}}
-			<a class="post__link" href="{{ post.url }}">More &rarr;</a>
+			<a class="post__link" href="{{ post.url }}">More<span class="right-chevron">r</span></a>
 		</article>
     {% endfor %}
 </section>

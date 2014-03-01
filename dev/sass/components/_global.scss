@@ -11,12 +11,21 @@ $fade: #dfdfdf;
 ::selection { background: $red; color: $white; }
 html { border-top: em(2px) solid $black; }
 body {
-	border-top: em(5px) solid $fade;
-	background: $fade;
+	border-top: em(2px) solid $fade;
+	background-color: $fade;
 }
 a {
 	color: $black;
+	text-decoration: none;
 	@include roboto-bold;
+	@include transition(color 0.4s ease);
+	&:hover {
+		color: $red;
+	}
+}
+.right-chevron {
+	vertical-align: middle;
+	@include icomoon;
 }
 .site-wrap {
 	background: $white;
